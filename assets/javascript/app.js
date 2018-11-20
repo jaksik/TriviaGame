@@ -139,7 +139,9 @@ $(document).ready(function () {
 
         //===RANDOM OPTION CHOSEN HERE
        
-            
+        if (questionIndex > options.length -1) {
+            questionIndex = 0;
+        }    
             pick = options[questionIndex];
             questionIndex++,
         console.log(pick);
@@ -181,7 +183,7 @@ $(document).ready(function () {
             displayScore();
             $("#questionblock").empty();
             $("#answerblock").empty();
-            $("#questionblock").html("<p> Wrong! The Correct Answer Is... <br>" + pick.answer + "</p>");
+            $("#questionblock").html("<p> Wrong! The Correct Answer Is... " + pick.answer + "</p>");
             var answerImage = $("<img>").attr("src", pick.image);
             $("#answerblock").append(answerImage);
            setTimeout (startGame, 3000)        }
