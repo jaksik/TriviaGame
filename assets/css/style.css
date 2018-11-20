@@ -4,11 +4,21 @@ body {
     background-size: cover;
     margin: 0;
 }
+
+p {
+    font-size: 115%;
+}
 h1 {
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 315%;
     text-align: center;
-    background: black;
     padding: 10px;
-    color: white;
+    color: rgba(0, 0, 0, 0.80);
+}
+
+h2 {
+    font-weight: bold;
 }
 
 .wrapper {
@@ -16,39 +26,44 @@ h1 {
     text-align: center;
 }
 
-#instructions {
-    background: white;
-    color: black;
-}
 .scoreboard {
+    display: none;
     border-style: solid;
     float: right;
+    width: 200px;
+    font-weight: bold;
 }
 
 #questionblock {
     font-size: 30px;
     font-weight: bold;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border-style: solid;
-    background: white;
+    background: rgba(250, 249, 249, 0.75);
     color: black;
     width: 400px;
+    border-radius: 25px;
+    padding: 15px;
 }
 
 #answerblock {
-    margin: 0 auto;
+    margin: auto;
 }
 button {
     margin: 10px;
     background: black;
     color: white;
-    width: 100px;
+    width: 125px;
     height: 35px;
     border-radius: 25px;
 }
 
 img {
-    width: 300px;
+    width: 250px;
+    border-style: solid;
+}
 
+#instructions {
+    font-size: 80%;
 }
