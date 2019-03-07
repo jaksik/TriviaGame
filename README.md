@@ -4,4 +4,4 @@
 * One of my first web applications I built
 
 
-https://jaksik.github.io//mountaineering-trivia
+https://jaksik.github.io/mountaineering-trivia/
